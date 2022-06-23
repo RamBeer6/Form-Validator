@@ -29,6 +29,7 @@ function checkEmail(input) {
   }
 }
 
+//Check if there empty inputs
 function checkRequired(inputArr) {
   inputArr.forEach(function (input) {
     if (input.value.trim() === '') {
@@ -39,6 +40,7 @@ function checkRequired(inputArr) {
   });
 }
 
+//Check inputs min & max validation
 function checkLength(input, min, max) {
   if (input.value.length < min) {
     showError(
